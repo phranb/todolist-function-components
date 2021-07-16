@@ -58,7 +58,7 @@ export const TaskForm = ({
       {/* <select done={done}>
         <option value="false">Done</option>
       </select> */}
-      <input type="submit" value="Add Todo" className="button is-success" />
+      <input type="submit" value="Add Todo" className="button is-primary" />
     </form>
   );
 };

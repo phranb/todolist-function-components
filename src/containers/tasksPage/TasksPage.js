@@ -21,9 +21,9 @@ export const TasksPage = ({ tasks, addTask }) => {
 
   return (
     <>
-      <h1 className="title is-1">todolist_</h1>
+      <h1 className="title is-1 has-text-primary main-title">todolist_</h1>
       <section>
-        <h2 className="title">new todo:</h2>
+        <h2 className="title">new to do:</h2>
         <TaskForm
           title={title}
           setTitle={setTitle}
@@ -40,7 +40,7 @@ export const TasksPage = ({ tasks, addTask }) => {
       </section>
       <hr />
       <section>
-        <h2 className="title">todolist_:</h2>
+        <h2 className="title">to do list:</h2>
         <TileList tiles={tasks} />
       </section>
     </>

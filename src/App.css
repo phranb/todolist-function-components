@@ -2,6 +2,27 @@
   text-align: center;
 }
 
+h1,
+h2,
+p {
+  font-family: 'Raleway', sans-serif;
+}
+
+.tile {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+.tile-title {
+  font-size: 2em;
+
+}
+
+.main-title {
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
