@@ -8,20 +8,39 @@ p {
   font-family: 'Raleway', sans-serif;
 }
 
+textarea {
+  margin-bottom: 10px;
+}
+
 .tile {
   font-size: 1.2em;
   font-weight: bolder;
 }
 
 .tile-title {
-  font-size: 2em;
+  font-size: 1.5em;
 
 }
 
 .main-title {
   text-align: center;
+  font-size: 4em !important;
   letter-spacing: 0.05em;
 }
+
+
+.tile {
+  margin-bottom: 4px;
+  /* text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  overflow: hidden !important; */
+}
+
+/* .p-tile {
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+} */
 
 .App-logo {
   height: 40vmin;

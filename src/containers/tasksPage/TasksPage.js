@@ -21,28 +21,39 @@ export const TasksPage = ({ tasks, addTask }) => {
 
   return (
     <>
-      <h1 className="title is-1 has-text-primary main-title">todolist_</h1>
-      <section>
-        <h2 className="title">new to do:</h2>
-        <TaskForm
-          title={title}
-          setTitle={setTitle}
-          description={description}
-          setDescription={setDescription}
-          date={date}
-          setDate={setDate}
-          time={time}
-          setTime={setTime}
-          done={done}
-          setDone={setDone}
-          handleSubmit={handleSubmit}
-        />
-      </section>
-      <hr />
-      <section>
-        <h2 className="title">to do list:</h2>
-        <TileList tiles={tasks} />
-      </section>
+      <h1 className="title is-1 has-text-white main-title">todolist_</h1>
+      <div className="columns">
+        <div className="column is-half">
+          <section className="section">
+            <div className="box">
+              <h2 className="title is-2">new to do:</h2>
+              <TaskForm
+                title={title}
+                setTitle={setTitle}
+                description={description}
+                setDescription={setDescription}
+                date={date}
+                setDate={setDate}
+                time={time}
+                setTime={setTime}
+                done={done}
+                setDone={setDone}
+                handleSubmit={handleSubmit}
+              />
+            </div>
+          </section>
+        </div>
+
+        <br />
+        <div className="column is-half">
+          <section className="section">
+            <div className="box">
+              <h2 className="title is-2">to do list:</h2>
+              <TileList tiles={tasks} />
+            </div>
+          </section>
+        </div>
+      </div>
     </>
   );
 };

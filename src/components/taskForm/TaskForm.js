@@ -22,7 +22,7 @@ export const TaskForm = ({
           value={title}
           onChange={(event) => setTitle(event.target.value)}
           placeholder="Title"
-          className="input"
+          className="input is-medium"
         />
       </label>
       <label>
@@ -32,9 +32,10 @@ export const TaskForm = ({
           value={description}
           onChange={(event) => setDescription(event.target.value)}
           placeholder="Description"
-          className="textarea"
+          className="textarea is-medium"
         />
       </label>
+
       <label>
         <input
           type="date"
@@ -42,9 +43,10 @@ export const TaskForm = ({
           value={date}
           onChange={(event) => setDate(event.target.value)}
           placeholder="Date"
-          className="input"
+          className="input is-medium"
         />
       </label>
+
       <label>
         <input
           type="time"
@@ -52,12 +54,13 @@ export const TaskForm = ({
           value={time}
           onChange={(event) => setTime(event.target.value)}
           placeholder="Time"
-          className="input"
+          className="input is-medium"
         />
       </label>
       {/* <select done={done}>
         <option value="false">Done</option>
       </select> */}
+
       <input type="submit" value="Add Todo" className="button is-primary" />
     </form>
   );
